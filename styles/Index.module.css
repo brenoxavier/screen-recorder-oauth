@@ -1,0 +1,31 @@
+.body {
+  padding: 0 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navOwner {
+  font-size: xx-small;
+  margin-bottom: 0;
+}
+
+.navTitle {
+  margin-top: 0;
+}
+
+.main {
+  margin-top: 2rem;
+}
+
+.footer {
+  text-align: center;
+  font-size: small;
+  margin-top: auto;
+}
