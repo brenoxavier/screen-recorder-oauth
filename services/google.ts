@@ -7,7 +7,13 @@ export function createOAuthClient(clientId: string, clientSecret: string, redire
 export function createRequestUserConsentUrl(oAuthClient: OAuth2Client) {
   return oAuthClient.generateAuthUrl({
     access_type: 'offline',
-    scope: ['https://www.googleapis.com/auth/youtube']
+    scope: [
+      'https://www.googleapis.com/auth/userinfo.profile',
+      'https://www.googleapis.com/auth/userinfo.email',
+      'https://www.googleapis.com/auth/youtube.upload',
+      'https://www.googleapis.com/auth/drive.file',
+      'https://www.googleapis.com/auth/drive'
+    ]
   })
 }
 
